@@ -166,7 +166,7 @@ class _PdfPreviewState extends State<PdfPreview> with PdfPreviewRaster {
   PdfPageFormat? _pageFormat;
 
   String get localPageFormat {
-    final locale = WidgetsBinding.instance!.window.locale;
+    final locale = WidgetsBinding.instance.window.locale;
     // ignore: unnecessary_cast
     final cc = (locale as Locale?)?.countryCode ?? 'US';
 
@@ -211,7 +211,7 @@ class _PdfPreviewState extends State<PdfPreview> with PdfPreviewRaster {
   @override
   void initState() {
     if (widget.initialPageFormat == null) {
-      final locale = WidgetsBinding.instance!.window.locale;
+      final locale = WidgetsBinding.instance.window.locale;
       // ignore: unnecessary_cast
       final cc = (locale as Locale?)?.countryCode ?? 'US';
 
